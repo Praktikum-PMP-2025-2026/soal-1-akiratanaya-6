@@ -102,6 +102,9 @@ int find(Node **head, int value){
 
 void display_forward(const Node *head) {
     printf("LIST ");
+    if (head==NULL){
+        printf("EMPTY\n");
+    }
     while (head != NULL) {
         printf("%d", head->x);
         if (head->next != NULL) {
